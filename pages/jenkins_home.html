@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jenkins</title>
+</head>
+<body>
+        {% for project in projects %}
+    <div>{{project.name}} <a href="{{ project.url }}">构建</a></div>
+    {% endfor %}
+</body>
+</html>

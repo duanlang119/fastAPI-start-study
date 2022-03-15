@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索</title>
+</head>
+<body>
+    <h2>搜索</h2>
+     <div>
+        <form action="/search" method="post">
+            <input name="keyword" placeholder="请输入要查询的关键字。。。。">
+            <input type="submit" value="搜索">
+        </form>
+
+    </div>
+    {% for rs in search_results %}
+    <p>任务： {{rs.content}}</p>
+    {% endfor %}
+
+
+</body>
+</html>
